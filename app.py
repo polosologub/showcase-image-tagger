@@ -21,6 +21,7 @@ combo_parser.add_argument('image_tags', type=str, action='append')
 combo_parser.add_argument('text_tags', type=str, action='append')
 combo_parser.add_argument('max_tags', type=int, default=20)
 
+
 class ImageTags(Resource):
     def post(self):
         args = img_parser.parse_args()
@@ -49,15 +50,11 @@ class CombinedTags(Resource):
         tags = model.combine_tags(image_tags, text_tags, max_tags)
         return {'combined_tags': tags}
 
-class ProjectTags(Resource):
-    def post(self):
-
-
 
 api.add_resource(ImageTags, '/image-tags')
 api.add_resource(CombinedTags, '/combined-tags')
 api.add_resource(TextTags, '/text-tags')
 
-#remove debug in production        
+
 if __name__ == "__main__":
     app.run(debug=True)
