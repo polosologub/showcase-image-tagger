@@ -65,7 +65,7 @@ def choose_image_tags(image_tags, max_tags):
     
     if len(duplicates) < max_tags:
         #determine how many more tags are allowed
-        rest_n = max_tags - len(singles)
+        rest_n = max_tags - len(duplicates)
 
         #sort highest percentages of rest 
         rest_percentages = [tup for tup in image_tags if any(i in tup for i in singles)]
