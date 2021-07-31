@@ -55,6 +55,6 @@ api.add_resource(ImageTags, '/image-tags')
 api.add_resource(CombinedTags, '/combined-tags')
 api.add_resource(TextTags, '/text-tags')
 
-        
+#remove debug in production        
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
