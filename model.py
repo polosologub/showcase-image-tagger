@@ -27,11 +27,11 @@ tags2021 = pd.read_excel("data/tags2021_filtered.xlsx")
 tags2021 = tags2021['Tag'].tolist()
 
 
-def predict_image_tags(image_features, text_features=text_features, dictionary=tags2021):
+def predict_image_tags(images, text_features=text_features, dictionary=tags2021):
     
     results = []
 
-    for i in image_features:
+    for i in images:
         response = requests.get(i)
         img = Image.open(BytesIO(response.content))
         image_input = preprocess(img).unsqueeze(0).to(device)
@@ -80,9 +80,9 @@ def choose_image_tags(image_tags, max_tags):
         return chosen_tags
 
 
-def get_image_tags(image_links, max_tags):
+def get_image_tags(images, max_tags):
     #predict tags
-    image_tags = predict_image_tags(image_links)
+    image_tags = predict_image_tags(images)
     
     #if 1 image
     if len(image_tags) == 5:
@@ -132,3 +132,4 @@ def combine_tags(image_tags, text_tags, max_tags):
     image_tags_filtered = [i for i in image_tags if not i in text_tags][:max_tags-5]
     all_tags = image_tags_filtered + text_tags
     return all_tags
+
