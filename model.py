@@ -19,11 +19,11 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 model, preprocess = clip.load("ViT-B/32", device=device)
 
 #Load text features (precomputed)
-text_features = torch.load('data/tags2021_filtered_clip-features.pt')
+text_features = torch.load('data/processed/tags2021_filtered_clip-features.pt')
 text_features /= text_features.norm(dim=-1, keepdim=True)
 
 #Set up vocabulary
-tags2021 = pd.read_excel("data/tags2021_filtered.xlsx")
+tags2021 = pd.read_excel("data/interim/tags2021_filtered.xlsx")
 tags2021 = tags2021['Tag'].tolist()
 
 #Predict top 5 tags for each image 
@@ -105,7 +105,7 @@ def get_image_tags(images, max_tags):
 custom_kw_extractor = yake.KeywordExtractor(lan="en", n=1, dedupLim=0.5, dedupFunc='seqm', windowsSize=1, features=None)
 
 #Load list of unwanted tags to filter keywords with
-tags_filter = pd.read_excel("data/tags_filter_2021.xlsx")
+tags_filter = pd.read_excel("data/interim/tags_filter_2021.xlsx")
 tags_filter = tags_filter['Tag'].to_numpy()
 
 #Load POS tagger 
