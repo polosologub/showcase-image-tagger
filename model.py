@@ -132,4 +132,3 @@ def combine_tags(image_tags, text_tags, max_tags):
     image_tags_filtered = [i for i in image_tags if not i in text_tags][:max_tags-5]
     all_tags = image_tags_filtered + text_tags
     return all_tags
-
