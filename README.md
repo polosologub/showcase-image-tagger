@@ -39,7 +39,7 @@ Get a list of tags.
 #### Status Codes
 
 |Code|Description|
-|----|-----|-------|-------|
+|----|-----------|
 |`200`|Success|
 |`422`|At least one data input required (description and/or images).|
 
