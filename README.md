@@ -27,7 +27,7 @@ Get a list of tags.
 #### Body Parameters
 
 |Parameter|Type|Description|Default|   
-|----|-----|-------|-------|-------|          
+|---------|----|-----------|-------|     
 `images`|`array, items: string`| **Optional.** An array of image URLs. Only accepts JPG, JPEG, PNG and GIF file extensions.|`Null`  
 `description`| `string`| **Optional.** The project description text.|`Null`
 |`max_tags`|`integer`|**Optional.** The maximum length of the tags list. Applies to image tags and combined image and text tags. Text tags on their own always contain 5 tags.|`20`
