@@ -62,7 +62,7 @@ class AutoTagger(Resource):
             #Get text tags
             text = unicodedata.normalize("NFKD", BeautifulSoup(text).get_text())
             text_tags = model.get_text_tags(text)
-            #Gombine tags
+            #Combine tags
             combined_tags = model.combine_tags(image_tags, text_tags, max_tags)
             return {'tags': combined_tags}
 
