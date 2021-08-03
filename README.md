@@ -18,7 +18,7 @@ The tool consists of three parts:
 ## Usage
 
 ### Get tags 
-Get a list of tags.
+Get an array of tags.
 
 #### Endpoint
 
