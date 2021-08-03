@@ -101,17 +101,17 @@ def get_image_tags(images, max_tags):
 
 ####TEXT TAGGER
 
+#Define keyword extractor
+custom_kw_extractor = yake.KeywordExtractor(lan="en", n=1, dedupLim=0.5, dedupFunc='seqm', windowsSize=1, features=None)
+
 #Load list of unwanted tags to filter keywords with
 tags_filter = pd.read_excel("data/tags_filter_2021.xlsx")
 tags_filter = tags_filter['Tag'].to_numpy()
 
-#Define keyword extractor
-custom_kw_extractor = yake.KeywordExtractor(lan="en", n=1, dedupLim=0.5, dedupFunc='seqm', windowsSize=1, features=None)
-
 #Load POS tagger 
 nlp = spacy.load('en_core_web_sm')
 
-#Remove these tags as they are too self-explanatory 
+#Remove these tokens as they are too self-explanatory 
 stopwords = ['project', 'showcase']
 
 #Get top 5 keyword tags
