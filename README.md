@@ -42,6 +42,7 @@ Get an array of tags.
 |----|-----------|
 |`200`|Success|
 |`422`|At least one data input required (description and/or images).|
+|`500`| Internal server error. (This can happen because of a wrong file type in the images.)| 
 
 
 #### Example Request Body
