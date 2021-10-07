@@ -49,12 +49,12 @@ Get an array of tags.
 ```
 {
     "images": [
-        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/2020/07/16151416/Screenshot-2020-07-16-at-16.04.08-1.png",
-        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/2020/07/16150447/Screenshot-2020-07-16-at-16.03.41.png",
-        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/2020/07/16150733/Screenshot-2020-07-16-at-16.03.49.png",
-        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/2020/07/16150739/Screenshot-2020-07-16-at-16.03.58.png",
-        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/2020/07/16150740/Screenshot-2020-07-16-at-16.04.08.png",
-        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/2020/07/16150820/Screenshot-2020-07-16-at-16.04.16-1.png"
+        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/.....",
+        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/.....",
+        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/.....",
+        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/.....",
+        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/.....",
+        "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/.....",
         ],
     "description": "<p> Garments in the collection have been designed to reveal areas of sexual significance to liberate women from moralised sexuality that stems from patriarchal ideals. </p>"
 }
