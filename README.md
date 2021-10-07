@@ -56,7 +56,7 @@ Get an array of tags.
         "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/.....",
         "https://s3-eu-west-2.amazonaws.com/portfolio-tools/wp-content/uploads/.....",
         ],
-    "description": "<p> Garments in the collection have been designed to reveal areas of sexual significance to liberate women from moralised sexuality that stems from patriarchal ideals. </p>"
+    "description": "<p> Description text.... </p>"
 }
 ```
 
