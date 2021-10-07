@@ -94,8 +94,3 @@ Get an array of tags.
 
 
 
-## To do:
-- [ ] Add security 
-- [ ] Deploy API on CCI server
-- [ ] Write documentation
-
